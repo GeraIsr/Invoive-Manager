@@ -1,0 +1,1047 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Invoice Manager — Freelancer Finance & Invoice App | Flutter App</title>
+<meta name="description" content="Invoice Manager is the all-in-one Flutter app for freelancers. Create professional invoices, manage clients, track work time, expenses, and contracts. Available for Android." />
+<meta name="keywords" content="invoice generator, freelancer invoice app, invoice manager, freelance finance, client management, time tracker freelance, expense manager, invoice PDF, freelancer app Android, Flutter invoice app, фриланс инвойс, управление инвойсами" />
+<meta property="og:title" content="Invoice Manager — Everything a Freelancer Needs" />
+<meta property="og:description" content="Create invoices, manage clients, track time and expenses — all in one beautiful Flutter app." />
+<meta property="og:type" content="website" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+<nav id="navbar">
+  <div class="container">
+    <div class="nav-inner">
+      <a href="#" class="logo">
+        <div class="logo-icon">📄</div>
+        <div>
+          <span class="logo-text">Invoice Manager</span>
+          <span class="logo-sub">Freelancer Finance</span>
+        </div>
+      </a>
+      <ul class="nav-links">
+        <li><a href="#features">Features</a></li>
+        <li><a href="#how-it-works">How it works</a></li>
+        <li><a href="#screenshots">Screenshots</a></li>
+        <li><a href="#roadmap">Roadmap</a></li>
+        <li><a href="#faq">FAQ</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button class="theme-toggle" id="themeToggle" title="Toggle theme">🌙</button>
+        <a href="#cta" class="btn-nav">
+          <span>📲</span> Download App
+        </a>
+        <button class="hamburger" id="hamburger" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#features">Features</a>
+  <a href="#how-it-works">How it works</a>
+  <a href="#screenshots">Screenshots</a>
+  <a href="#tech">Technology</a>
+  <a href="#roadmap">Roadmap</a>
+  <a href="#faq">FAQ</a>
+  <a href="#cta" style="color: var(--indigo-light); font-weight: 700; margin-top: 8px; border: 1px solid var(--indigo); padding: 10px; border-radius: 10px; text-align: center;">📲 Download on Google Play</a>
+</div>
+
+<section id="hero">
+  <div class="hero-bg">
+    <div class="hero-orb hero-orb-1"></div>
+    <div class="hero-orb hero-orb-2"></div>
+    <div class="hero-orb hero-orb-3"></div>
+    <div class="hero-grid"></div>
+  </div>
+  <div class="container">
+    <div class="hero-inner">
+      <div class="hero-content">
+        <div class="badge">
+          <span class="badge-dot"></span>
+          Now available on Android
+        </div>
+        <h1 class="hero-title">
+          <span class="gradient-text">Invoice Manager</span>
+        </h1>
+        <div class="hero-subtitle">Freelancer Finance Suite</div>
+        <p class="hero-desc">
+          Everything a freelancer needs to manage clients, invoices and income — in one elegant Flutter app. Create professional invoices, track time, manage expenses and sign contracts.
+        </p>
+        <div class="hero-cta">
+          <a href="#" class="btn-primary btn-large">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M3.18 23.76c.35.2.74.24 1.12.12l12.44-7.18-2.7-2.7-10.86 9.76zM20.84 10.4C20.32 9.96 14.28 6.38 13 5.64L3.3.24C2.9.04 2.44.08 2.1.32L14.84 13.06l6-2.66zM1.56 1.08C1.2 1.4 1 1.86 1 2.44v19.12c0 .58.2 1.04.56 1.36l.12.1L12.5 12.1v-.2L1.68.98l-.12.1zM21.28 13.26l-3.38 1.9-3-3 3-3 3.4 1.92c.96.54.96 1.64-.02 2.18z"/></svg>
+            Get it on Google Play
+          </a>
+          <a href="#features" class="btn-secondary btn-large">
+            Explore Features →
+          </a>
+        </div>
+        <div class="hero-stats">
+          <div class="hero-stat">
+            <span class="hero-stat-num">10+</span>
+            <span class="hero-stat-label">Currencies</span>
+          </div>
+          <div class="hero-stat">
+            <span class="hero-stat-num">2</span>
+            <span class="hero-stat-label">Languages</span>
+          </div>
+          <div class="hero-stat">
+            <span class="hero-stat-num">Free</span>
+            <span class="hero-stat-label">To download</span>
+          </div>
+        </div>
+      </div>
+
+      
+      <div class="hero-visual">
+        
+        <div class="float-chip float-chip-1">
+          <span class="chip-icon">✅</span>
+          <div>
+            <span class="chip-val">Invoice #47 Paid</span>
+            <span class="chip-label">€2,400.00 received</span>
+          </div>
+        </div>
+        <div class="float-chip float-chip-2">
+          <span class="chip-icon">⏱️</span>
+          <div>
+            <span class="chip-val">3h 24m tracked</span>
+            <span class="chip-label">Project: Web App</span>
+          </div>
+        </div>
+        <div class="float-chip float-chip-3">
+          <span class="chip-icon">📊</span>
+          <div>
+            <span class="chip-val">+34% this month</span>
+            <span class="chip-label">Revenue growth</span>
+          </div>
+        </div>
+
+        <div class="phone-wrap">
+          <div class="phone-frame">
+            <div class="phone-notch"></div>
+            <div class="phone-screen" style="background:#121212;">
+              
+              <div style="display:flex;justify-content:space-between;align-items:center;padding:10px 14px 4px;flex-shrink:0;">
+                <span style="font-size:8px;font-weight:700;color:#e0e0e0;font-family:var(--font-body);">9:41</span>
+                <div style="display:flex;gap:4px;align-items:center;">
+                  <svg width="10" height="8" viewBox="0 0 10 8" fill="#e0e0e0"><rect x="0" y="5" width="2" height="3" rx="0.5"/><rect x="2.5" y="3" width="2" height="5" rx="0.5"/><rect x="5" y="1.5" width="2" height="6.5" rx="0.5"/><rect x="7.5" y="0" width="2" height="8" rx="0.5"/></svg>
+                  <svg width="10" height="8" viewBox="0 0 10 8" fill="#e0e0e0"><rect x="1" y="1" width="8" height="6" rx="1" fill="none" stroke="#e0e0e0" stroke-width="1"/><rect x="2" y="2.5" width="5" height="3" rx="0.5" fill="#e0e0e0"/><rect x="9" y="2.5" width="1.5" height="3" rx="0.5" fill="#e0e0e0"/></svg>
+                </div>
+              </div>
+
+              <div style="padding:2px 14px 10px;flex:1;overflow:hidden;display:flex;flex-direction:column;gap:8px;">
+                
+                <div style="font-family:var(--font-display);font-size:18px;font-weight:800;color:#ffffff;letter-spacing:-0.02em;">Home</div>
+
+                
+                <div style="background:#1e1e1e;border-radius:14px;padding:12px 14px;display:flex;align-items:center;gap:10px;flex-shrink:0;">
+                  <div style="width:32px;height:32px;background:rgba(124,58,237,0.2);border-radius:10px;display:flex;align-items:center;justify-content:center;flex-shrink:0;">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#a78bfa" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                  </div>
+                  <div>
+                    <div style="font-family:var(--font-display);font-size:22px;font-weight:800;color:#a78bfa;line-height:1;">8</div>
+                    <div style="font-size:9px;color:#888;font-family:var(--font-body);margin-top:1px;">Clients</div>
+                  </div>
+                </div>
+
+                
+                <div style="background:#1e1e1e;border-radius:14px;padding:12px 14px;flex-shrink:0;">
+                  <div style="display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:2px;">
+                    <div>
+                      <div style="font-size:10px;font-weight:600;color:#ffffff;font-family:var(--font-body);">Income for 6 months</div>
+                      <div style="font-size:7.5px;color:#666;font-family:var(--font-body);">B USD · approximate</div>
+                    </div>
+                    <div style="text-align:right;">
+                      <div style="font-family:var(--font-display);font-size:14px;font-weight:800;color:#22c55e;">$42,180</div>
+                      <div style="font-size:7px;color:#666;font-family:var(--font-body);">total</div>
+                    </div>
+                  </div>
+
+                  
+                  <div style="display:flex;align-items:flex-end;gap:5px;height:52px;margin:8px 0 4px;padding:0 2px;">
+                    <div style="flex:1;display:flex;flex-direction:column;align-items:center;gap:3px;">
+                      <div style="width:100%;border-radius:3px 3px 0 0;background:rgba(124,58,237,0.5);height:38%;"></div>
+                    </div>
+                    <div style="flex:1;display:flex;flex-direction:column;align-items:center;gap:3px;">
+                      <div style="width:100%;border-radius:3px 3px 0 0;background:rgba(124,58,237,0.5);height:55%;"></div>
+                    </div>
+                    <div style="flex:1;display:flex;flex-direction:column;align-items:center;gap:3px;">
+                      <div style="width:100%;border-radius:3px 3px 0 0;background:rgba(124,58,237,0.5);height:47%;"></div>
+                    </div>
+                    <div style="flex:1;display:flex;flex-direction:column;align-items:center;gap:3px;">
+                      <div style="width:100%;border-radius:3px 3px 0 0;background:rgba(124,58,237,0.5);height:72%;"></div>
+                    </div>
+                    <div style="flex:1;display:flex;flex-direction:column;align-items:center;gap:3px;">
+                      <div style="width:100%;border-radius:3px 3px 0 0;background:rgba(124,58,237,0.5);height:63%;"></div>
+                    </div>
+                    <div style="flex:1;display:flex;flex-direction:column;align-items:center;gap:3px;">
+                      <div style="width:100%;border-radius:3px 3px 0 0;background:linear-gradient(180deg,#a78bfa,#7c3aed);height:100%;box-shadow:0 0 8px rgba(124,58,237,0.6);"></div>
+                    </div>
+                  </div>
+                  <div style="display:flex;justify-content:space-between;padding:0 2px;">
+                    <span style="font-size:6.5px;color:#555;font-family:var(--font-body);">Oct</span>
+                    <span style="font-size:6.5px;color:#555;font-family:var(--font-body);">Nov</span>
+                    <span style="font-size:6.5px;color:#555;font-family:var(--font-body);">Dec</span>
+                    <span style="font-size:6.5px;color:#555;font-family:var(--font-body);">Jan</span>
+                    <span style="font-size:6.5px;color:#555;font-family:var(--font-body);">Feb</span>
+                    <span style="font-size:6.5px;color:#a78bfa;font-weight:700;font-family:var(--font-body);">Mar</span>
+                  </div>
+                  <div style="text-align:right;margin-top:4px;">
+                    <span style="font-size:7.5px;color:#a78bfa;font-family:var(--font-body);font-weight:500;">Details ›</span>
+                  </div>
+                </div>
+
+                
+                <div style="flex-shrink:0;">
+                  <div style="font-size:10px;font-weight:700;color:#ffffff;font-family:var(--font-body);margin-bottom:6px;">Recent invoices</div>
+                  <div style="background:#1e1e1e;border-radius:14px;overflow:hidden;">
+                    
+                    <div style="display:flex;align-items:center;gap:8px;padding:9px 12px;border-bottom:1px solid #2a2a2a;">
+                      <div style="width:24px;height:24px;border-radius:8px;background:rgba(99,102,241,0.2);display:flex;align-items:center;justify-content:center;flex-shrink:0;">
+                        <svg width="11" height="13" viewBox="0 0 11 13" fill="#818cf8"><path d="M1 1h7l2 2v9H1V1z" stroke="#818cf8" stroke-width="1" fill="none"/><line x1="3" y1="5" x2="8" y2="5" stroke="#818cf8" stroke-width="1"/><line x1="3" y1="7.5" x2="8" y2="7.5" stroke="#818cf8" stroke-width="1"/><line x1="3" y1="10" x2="6" y2="10" stroke="#818cf8" stroke-width="1"/></svg>
+                      </div>
+                      <div style="flex:1;min-width:0;">
+                        <div style="font-size:8.5px;font-weight:600;color:#e0e0e0;font-family:var(--font-body);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">Acme Corp – INV-047</div>
+                        <div style="font-size:7px;color:#555;font-family:var(--font-body);">Mar 8, 2026</div>
+                      </div>
+                      <div style="text-align:right;flex-shrink:0;">
+                        <div style="font-family:var(--font-display);font-size:9px;font-weight:700;color:#22c55e;">$2,400</div>
+                        <div style="font-size:6.5px;background:rgba(34,197,94,0.15);color:#22c55e;padding:1px 5px;border-radius:4px;font-family:var(--font-body);margin-top:1px;">Paid</div>
+                      </div>
+                    </div>
+                    
+                    <div style="display:flex;align-items:center;gap:8px;padding:9px 12px;border-bottom:1px solid #2a2a2a;">
+                      <div style="width:24px;height:24px;border-radius:8px;background:rgba(59,130,246,0.2);display:flex;align-items:center;justify-content:center;flex-shrink:0;">
+                        <svg width="11" height="13" viewBox="0 0 11 13" fill="#60a5fa"><path d="M1 1h7l2 2v9H1V1z" stroke="#60a5fa" stroke-width="1" fill="none"/><line x1="3" y1="5" x2="8" y2="5" stroke="#60a5fa" stroke-width="1"/><line x1="3" y1="7.5" x2="8" y2="7.5" stroke="#60a5fa" stroke-width="1"/><line x1="3" y1="10" x2="6" y2="10" stroke="#60a5fa" stroke-width="1"/></svg>
+                      </div>
+                      <div style="flex:1;min-width:0;">
+                        <div style="font-size:8.5px;font-weight:600;color:#e0e0e0;font-family:var(--font-body);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">TechStart – INV-048</div>
+                        <div style="font-size:7px;color:#555;font-family:var(--font-body);">Mar 5, 2026</div>
+                      </div>
+                      <div style="text-align:right;flex-shrink:0;">
+                        <div style="font-family:var(--font-display);font-size:9px;font-weight:700;color:#60a5fa;">$1,800</div>
+                        <div style="font-size:6.5px;background:rgba(59,130,246,0.15);color:#60a5fa;padding:1px 5px;border-radius:4px;font-family:var(--font-body);margin-top:1px;">Sent</div>
+                      </div>
+                    </div>
+                    
+                    <div style="display:flex;align-items:center;gap:8px;padding:9px 12px;">
+                      <div style="width:24px;height:24px;border-radius:8px;background:rgba(244,63,94,0.2);display:flex;align-items:center;justify-content:center;flex-shrink:0;">
+                        <svg width="11" height="13" viewBox="0 0 11 13" fill="#f43f5e"><path d="M1 1h7l2 2v9H1V1z" stroke="#f43f5e" stroke-width="1" fill="none"/><line x1="3" y1="5" x2="8" y2="5" stroke="#f43f5e" stroke-width="1"/><line x1="3" y1="7.5" x2="8" y2="7.5" stroke="#f43f5e" stroke-width="1"/><line x1="3" y1="10" x2="6" y2="10" stroke="#f43f5e" stroke-width="1"/></svg>
+                      </div>
+                      <div style="flex:1;min-width:0;">
+                        <div style="font-size:8.5px;font-weight:600;color:#e0e0e0;font-family:var(--font-body);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">DesignHub – INV-044</div>
+                        <div style="font-size:7px;color:#555;font-family:var(--font-body);">Feb 20, 2026</div>
+                      </div>
+                      <div style="text-align:right;flex-shrink:0;">
+                        <div style="font-family:var(--font-display);font-size:9px;font-weight:700;color:#f43f5e;">$950</div>
+                        <div style="font-size:6.5px;background:rgba(244,63,94,0.15);color:#f43f5e;padding:1px 5px;border-radius:4px;font-family:var(--font-body);margin-top:1px;">Overdue</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              
+              <div style="display:flex;background:#1a1a1a;border-top:1px solid #2a2a2a;padding:8px 0 10px;flex-shrink:0;">
+                <div style="flex:1;display:flex;flex-direction:column;align-items:center;gap:3px;">
+                  <div style="width:26px;height:26px;background:rgba(124,58,237,0.25);border-radius:8px;display:flex;align-items:center;justify-content:center;">
+                    <svg width="13" height="13" viewBox="0 0 24 24" fill="#a78bfa"><rect x="2" y="3" width="9" height="9" rx="1"/><rect x="13" y="3" width="9" height="9" rx="1"/><rect x="2" y="14" width="9" height="9" rx="1"/><rect x="13" y="14" width="9" height="9" rx="1"/></svg>
+                  </div>
+                  <span style="font-size:6.5px;color:#a78bfa;font-weight:700;font-family:var(--font-body);">Home</span>
+                </div>
+                <div style="flex:1;display:flex;flex-direction:column;align-items:center;gap:3px;">
+                  <div style="width:26px;height:26px;display:flex;align-items:center;justify-content:center;">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#555" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                  </div>
+                  <span style="font-size:6.5px;color:#555;font-family:var(--font-body);">Clients</span>
+                </div>
+                <div style="flex:1;display:flex;flex-direction:column;align-items:center;gap:3px;">
+                  <div style="width:26px;height:26px;display:flex;align-items:center;justify-content:center;">
+                    <svg width="13" height="14" viewBox="0 0 24 24" fill="none" stroke="#555" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="8" y1="13" x2="16" y2="13"/><line x1="8" y1="17" x2="16" y2="17"/></svg>
+                  </div>
+                  <span style="font-size:6.5px;color:#555;font-family:var(--font-body);">Invoices</span>
+                </div>
+                <div style="flex:1;display:flex;flex-direction:column;align-items:center;gap:3px;">
+                  <div style="width:26px;height:26px;display:flex;align-items:center;justify-content:center;">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#555" stroke-width="2"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+                  </div>
+                  <span style="font-size:6.5px;color:#555;font-family:var(--font-body);">Expenses</span>
+                </div>
+                <div style="flex:1;display:flex;flex-direction:column;align-items:center;gap:3px;">
+                  <div style="width:26px;height:26px;display:flex;align-items:center;justify-content:center;">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#555" stroke-width="2"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/></svg>
+                  </div>
+                  <span style="font-size:6.5px;color:#555;font-family:var(--font-body);">More</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<section id="features">
+  <div class="container">
+    <div class="section-header animate-on-scroll">
+      <div class="badge"><span class="badge-dot"></span>Core Features</div>
+      <h2>Everything you need to <span class="gradient-text">run your freelance business</span></h2>
+      <p>Designed for modern freelancers, consultants and self-employed professionals who need professional tools without the enterprise complexity.</p>
+    </div>
+
+    <div class="features-grid">
+      
+      <div class="feature-card featured animate-on-scroll">
+        <div class="feature-icon">📋</div>
+        <h3>Professional Invoice Creation</h3>
+        <p>Generate beautiful, print-ready PDF invoices with your custom logo, brand colors, fonts, and footer. Auto-calculate taxes, discounts and totals. Share via link or download instantly.</p>
+        <div class="feature-tag">→ PDF export · Custom branding · Auto-numbering</div>
+      </div>
+
+      
+      <div class="feature-card animate-on-scroll delay-1">
+        <div class="feature-icon">🔄</div>
+        <h3>Invoice Status Tracking</h3>
+        <p>Track every invoice through its lifecycle: New → Sent → Paid → Overdue. Get push notifications when payment is due.</p>
+        <div class="feature-tag">→ Push reminders</div>
+      </div>
+
+      
+      <div class="feature-card animate-on-scroll delay-1">
+        <div class="feature-icon">👥</div>
+        <h3>Client Management</h3>
+        <p>Full client profiles with contact info, billing address, currency, and complete project history at your fingertips.</p>
+        <div class="feature-tag">→ Project history</div>
+      </div>
+
+      
+      <div class="feature-card animate-on-scroll delay-2">
+        <div class="feature-icon">⏱️</div>
+        <h3>Time Tracker</h3>
+        <p>Track work hours per project with one tap. Auto-convert tracked time into invoice line items at your hourly rate.</p>
+        <div class="feature-tag">→ Auto invoice items</div>
+      </div>
+
+      
+      <div class="feature-card animate-on-scroll delay-2">
+        <div class="feature-icon">💸</div>
+        <h3>Expense Manager</h3>
+        <p>Categorize project expenses, attach receipts and track profitability. Know exactly what each project truly earns you.</p>
+        <div class="feature-tag">→ Profit tracking</div>
+      </div>
+
+      
+      <div class="feature-card animate-on-scroll delay-3">
+        <div class="feature-icon">📊</div>
+        <h3>Analytics Dashboard</h3>
+        <p>Visual monthly income charts, client revenue breakdown and financial trends — so you always know your business health.</p>
+        <div class="feature-tag">→ Income charts</div>
+      </div>
+
+      
+      <div class="feature-card animate-on-scroll delay-3">
+        <div class="feature-icon">📝</div>
+        <h3>Contract Templates</h3>
+        <p>Ready-to-use freelancer contracts in Russian and English for development, design, and consulting. Fill, sign and share.</p>
+        <div class="feature-tag">→ RU & EN templates</div>
+      </div>
+
+      
+      <div class="feature-card animate-on-scroll delay-4">
+        <div class="feature-icon">💱</div>
+        <h3>Multi-Currency</h3>
+        <p>Supports 10+ currencies including EUR, USD, RUB, KZT, UAH. Invoice international clients in their local currency.</p>
+        <div class="feature-tag">→ 10+ currencies</div>
+      </div>
+
+      
+      <div class="feature-card animate-on-scroll delay-4">
+        <div class="feature-icon">🌍</div>
+        <h3>English & Russian</h3>
+        <p>Full app localization in English and Russian. Designed for freelancers across CIS and European countries.</p>
+        <div class="feature-tag">→ EN · RU</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<section id="how-it-works">
+  <div class="container">
+    <div class="section-header animate-on-scroll">
+      <div class="badge"><span class="badge-dot"></span>How It Works</div>
+      <h2>From setup to <span class="gradient-text">first paid invoice</span> in minutes</h2>
+      <p>Invoice Manager is designed to get you earning faster. No steep learning curve — just a clean, intuitive workflow.</p>
+    </div>
+
+    <div class="steps-container">
+      <div class="steps-line"></div>
+      <div class="steps-grid">
+        <div class="step-card animate-on-scroll delay-1">
+          <div class="step-number">1</div>
+          <div class="step-icon">👤</div>
+          <h3>Add Your Clients</h3>
+          <p>Create client profiles with full contact details, billing info, and preferred currency. Import from contacts in seconds.</p>
+        </div>
+        <div class="step-card animate-on-scroll delay-2">
+          <div class="step-number">2</div>
+          <div class="step-icon">⏱️</div>
+          <h3>Track Time & Create Invoices</h3>
+          <p>Log work hours as you go. When the project ends, convert tracked time to invoice line items with one tap.</p>
+        </div>
+        <div class="step-card animate-on-scroll delay-3">
+          <div class="step-number">3</div>
+          <div class="step-icon">📤</div>
+          <h3>Send & Get Paid</h3>
+          <p>Export a beautiful PDF invoice and share it via any messenger or email. Track payment status in real-time.</p>
+        </div>
+        <div class="step-card animate-on-scroll delay-4">
+          <div class="step-number">4</div>
+          <div class="step-icon">📈</div>
+          <h3>Analyze Your Income</h3>
+          <p>Review monthly earnings charts, see your top clients, and understand where your revenue actually comes from.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<section id="screenshots">
+  <div class="container">
+    <div class="section-header animate-on-scroll">
+      <div class="badge"><span class="badge-dot"></span>App Screens</div>
+      <h2>A beautiful app designed for <span class="gradient-text">real work</span></h2>
+      <p>Material 3 design language with full dark mode support. Swipe through the key screens below.</p>
+    </div>
+  </div>
+
+  <div class="screenshots-track-wrap animate-on-scroll">
+    <div class="screenshots-track" id="screenshotsTrack">
+
+      
+      <div class="screenshot-card">
+        <div class="screenshot-phone">
+          <div class="screenshot-screen">
+            <div class="ss-header">
+              <div class="ss-title">Dashboard</div>
+              <div class="ss-subtitle">March 2026</div>
+            </div>
+            <div style="padding:8px 12px;">
+              <div style="background:var(--grad-primary);border-radius:12px;padding:12px;margin-bottom:10px;position:relative;overflow:hidden;">
+                <div style="position:absolute;top:-10px;right:-10px;width:60px;height:60px;background:rgba(255,255,255,0.07);border-radius:50%;"></div>
+                <div style="font-size:8px;color:rgba(255,255,255,0.7);font-family:var(--font-body);">Total Earned</div>
+                <div style="font-family:var(--font-display);font-size:20px;color:white;font-weight:800;">€ 8,240</div>
+                <div style="font-size:7px;color:rgba(255,255,255,0.65);font-family:var(--font-body);margin-top:2px;">↑ +34% vs Feb</div>
+              </div>
+              <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:5px;margin-bottom:10px;">
+                <div style="background:var(--bg-card);border:1px solid var(--border);border-radius:8px;padding:6px;text-align:center;">
+                  <div style="font-size:7px;color:var(--text-muted);font-family:var(--font-body);">Invoices</div>
+                  <div style="font-family:var(--font-display);font-size:13px;font-weight:700;">24</div>
+                </div>
+                <div style="background:var(--bg-card);border:1px solid var(--border);border-radius:8px;padding:6px;text-align:center;">
+                  <div style="font-size:7px;color:var(--text-muted);font-family:var(--font-body);">Clients</div>
+                  <div style="font-family:var(--font-display);font-size:13px;font-weight:700;">12</div>
+                </div>
+                <div style="background:var(--bg-card);border:1px solid var(--border);border-radius:8px;padding:6px;text-align:center;">
+                  <div style="font-size:7px;color:var(--text-muted);font-family:var(--font-body);">Hours</div>
+                  <div style="font-family:var(--font-display);font-size:13px;font-weight:700;">147h</div>
+                </div>
+              </div>
+              <div style="font-size:8px;font-weight:700;color:var(--text-muted);text-transform:uppercase;letter-spacing:0.06em;font-family:var(--font-body);margin-bottom:5px;">Recent Activity</div>
+              <div style="display:flex;align-items:center;gap:5px;padding:4px 0;border-bottom:1px solid var(--border);">
+                <div style="width:20px;height:20px;border-radius:6px;background:rgba(34,197,94,0.15);display:flex;align-items:center;justify-content:center;font-size:9px;">✅</div>
+                <div style="flex:1;">
+                  <div style="font-size:8px;color:var(--text-primary);font-family:var(--font-body);">Acme Corp — Paid</div>
+                  <div style="font-size:6px;color:var(--text-muted);font-family:var(--font-body);">INV-047</div>
+                </div>
+                <div style="font-family:var(--font-display);font-size:9px;color:#22c55e;font-weight:700;">€2,400</div>
+              </div>
+              <div style="display:flex;align-items:center;gap:5px;padding:4px 0;">
+                <div style="width:20px;height:20px;border-radius:6px;background:rgba(244,63,94,0.15);display:flex;align-items:center;justify-content:center;font-size:9px;">⚠️</div>
+                <div style="flex:1;">
+                  <div style="font-size:8px;color:var(--text-primary);font-family:var(--font-body);">DesignHub — Overdue</div>
+                  <div style="font-size:6px;color:var(--text-muted);font-family:var(--font-body);">INV-044</div>
+                </div>
+                <div style="font-family:var(--font-display);font-size:9px;color:#f43f5e;font-weight:700;">€950</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="screenshot-label">Dashboard</div>
+      </div>
+
+      
+      <div class="screenshot-card">
+        <div class="screenshot-phone">
+          <div class="screenshot-screen">
+            <div class="ss-header">
+              <div class="ss-title">New Invoice</div>
+              <div class="ss-subtitle">INV-049</div>
+            </div>
+            <div class="ss-invoice-form">
+              <div class="ss-form-field">
+                <div class="ss-field-label">Client</div>
+                <div class="ss-field-val">Acme Corporation</div>
+              </div>
+              <div class="ss-form-field">
+                <div class="ss-field-label">Issue Date</div>
+                <div class="ss-field-val">March 9, 2026</div>
+              </div>
+              <div class="ss-form-field">
+                <div class="ss-field-label">Due Date</div>
+                <div class="ss-field-val">March 23, 2026 (14 days)</div>
+              </div>
+              <div style="font-size:8px;font-weight:700;color:var(--text-muted);text-transform:uppercase;letter-spacing:0.06em;font-family:var(--font-body);margin:8px 0 5px;">Line Items</div>
+              <div style="background:var(--bg-card);border:1px solid var(--border);border-radius:8px;padding:7px 8px;margin-bottom:5px;">
+                <div style="display:flex;justify-content:space-between;">
+                  <div style="font-size:8px;color:var(--text-primary);font-family:var(--font-body);">UI/UX Design · 24h</div>
+                  <div style="font-size:8px;font-weight:700;font-family:var(--font-display);">€1,200</div>
+                </div>
+                <div style="font-size:6px;color:var(--text-muted);font-family:var(--font-body);">€50/h × 24</div>
+              </div>
+              <div style="background:var(--bg-card);border:1px solid var(--border);border-radius:8px;padding:7px 8px;margin-bottom:8px;">
+                <div style="display:flex;justify-content:space-between;">
+                  <div style="font-size:8px;color:var(--text-primary);font-family:var(--font-body);">Figma License</div>
+                  <div style="font-size:8px;font-weight:700;font-family:var(--font-display);">€145</div>
+                </div>
+                <div style="font-size:6px;color:var(--text-muted);font-family:var(--font-body);">Expense reimbursement</div>
+              </div>
+              <div style="background:var(--bg-card);border:1px solid var(--border);border-radius:8px;padding:7px 8px;margin-bottom:8px;border-style:dashed;display:flex;align-items:center;justify-content:center;gap:4px;">
+                <div style="font-size:9px;color:var(--indigo-light);font-family:var(--font-body);">+ Add item</div>
+              </div>
+              <div style="border-top:1px solid var(--border);padding-top:7px;">
+                <div style="display:flex;justify-content:space-between;margin-bottom:3px;">
+                  <div style="font-size:7px;color:var(--text-muted);font-family:var(--font-body);">Subtotal</div>
+                  <div style="font-size:8px;font-family:var(--font-display);">€1,345</div>
+                </div>
+                <div style="display:flex;justify-content:space-between;margin-bottom:5px;">
+                  <div style="font-size:7px;color:var(--text-muted);font-family:var(--font-body);">VAT 19%</div>
+                  <div style="font-size:8px;font-family:var(--font-display);">€255.55</div>
+                </div>
+                <div style="display:flex;justify-content:space-between;">
+                  <div style="font-size:9px;font-weight:700;color:var(--text-primary);font-family:var(--font-body);">Total</div>
+                  <div style="font-family:var(--font-display);font-size:14px;font-weight:800;color:var(--indigo-light);">€1,600.55</div>
+                </div>
+              </div>
+              <div style="margin-top:10px;background:var(--grad-primary);border-radius:10px;padding:7px;text-align:center;color:white;font-size:9px;font-weight:700;font-family:var(--font-body);">📄 Generate PDF Invoice</div>
+            </div>
+          </div>
+        </div>
+        <div class="screenshot-label">Invoice Creation</div>
+      </div>
+
+      
+      <div class="screenshot-card">
+        <div class="screenshot-phone">
+          <div class="screenshot-screen">
+            <div class="ss-header">
+              <div class="ss-title">Analytics</div>
+              <div class="ss-subtitle">Last 6 months</div>
+            </div>
+            <div class="ss-chart">
+              <div style="display:flex;justify-content:space-between;margin-bottom:6px;">
+                <div>
+                  <div style="font-size:7px;color:var(--text-muted);font-family:var(--font-body);">Total Revenue</div>
+                  <div style="font-family:var(--font-display);font-size:18px;font-weight:800;background:var(--grad-text);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">€42,180</div>
+                </div>
+                <div style="text-align:right;">
+                  <div style="font-size:7px;color:var(--text-muted);font-family:var(--font-body);">Avg / month</div>
+                  <div style="font-family:var(--font-display);font-size:13px;font-weight:700;">€7,030</div>
+                </div>
+              </div>
+              <div class="chart-bars">
+                <div class="chart-bar" style="height:55%;"></div>
+                <div class="chart-bar" style="height:70%;"></div>
+                <div class="chart-bar" style="height:60%;"></div>
+                <div class="chart-bar" style="height:80%;"></div>
+                <div class="chart-bar" style="height:65%;"></div>
+                <div class="chart-bar active" style="height:100%;"></div>
+              </div>
+              <div class="chart-labels">
+                <span class="chart-label-item">Oct</span>
+                <span class="chart-label-item">Nov</span>
+                <span class="chart-label-item">Dec</span>
+                <span class="chart-label-item">Jan</span>
+                <span class="chart-label-item">Feb</span>
+                <span class="chart-label-item">Mar</span>
+              </div>
+            </div>
+            <div style="padding:0 12px 8px;">
+              <div style="font-size:8px;font-weight:700;color:var(--text-muted);text-transform:uppercase;letter-spacing:0.06em;font-family:var(--font-body);margin-bottom:5px;">Top Clients</div>
+              <div style="display:flex;align-items:center;gap:6px;padding:5px 0;border-bottom:1px solid var(--border);">
+                <div style="flex:1;">
+                  <div style="font-size:8px;font-weight:600;font-family:var(--font-body);">Acme Corporation</div>
+                  <div style="height:4px;background:var(--border);border-radius:2px;margin-top:3px;overflow:hidden;"><div style="height:100%;width:80%;background:var(--grad-primary);border-radius:2px;"></div></div>
+                </div>
+                <div style="font-family:var(--font-display);font-size:9px;font-weight:700;color:var(--indigo-light);">€16,800</div>
+              </div>
+              <div style="display:flex;align-items:center;gap:6px;padding:5px 0;border-bottom:1px solid var(--border);">
+                <div style="flex:1;">
+                  <div style="font-size:8px;font-weight:600;font-family:var(--font-body);">TechStart GmbH</div>
+                  <div style="height:4px;background:var(--border);border-radius:2px;margin-top:3px;overflow:hidden;"><div style="height:100%;width:55%;background:var(--grad-primary);border-radius:2px;"></div></div>
+                </div>
+                <div style="font-family:var(--font-display);font-size:9px;font-weight:700;color:var(--indigo-light);">€11,500</div>
+              </div>
+              <div style="display:flex;align-items:center;gap:6px;padding:5px 0;">
+                <div style="flex:1;">
+                  <div style="font-size:8px;font-weight:600;font-family:var(--font-body);">DesignHub Studio</div>
+                  <div style="height:4px;background:var(--border);border-radius:2px;margin-top:3px;overflow:hidden;"><div style="height:100%;width:35%;background:var(--grad-primary);border-radius:2px;"></div></div>
+                </div>
+                <div style="font-family:var(--font-display);font-size:9px;font-weight:700;color:var(--indigo-light);">€7,200</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="screenshot-label">Analytics</div>
+      </div>
+
+      
+      <div class="screenshot-card">
+        <div class="screenshot-phone">
+          <div class="screenshot-screen">
+            <div class="ss-header">
+              <div class="ss-title">Clients</div>
+              <div class="ss-subtitle">12 active</div>
+            </div>
+            <div style="padding:4px 12px 8px;">
+              <div style="background:var(--bg-card);border:1px solid var(--border);border-radius:10px;padding:7px 8px;margin-bottom:6px;display:flex;align-items:center;gap:6px;">
+                <div style="font-size:9px;color:var(--text-muted);font-family:var(--font-body);">🔍 Search clients...</div>
+              </div>
+            </div>
+            <div class="ss-client-list">
+              <div class="ss-client-item">
+                <div class="ss-client-avatar" style="background:rgba(99,102,241,0.2);">🏢</div>
+                <div style="flex:1;">
+                  <div class="ss-client-name">Acme Corporation</div>
+                  <div class="ss-client-revenue">Total: €16,800</div>
+                </div>
+                <div class="ss-client-chip" style="background:rgba(34,197,94,0.12);color:#22c55e;">Active</div>
+              </div>
+              <div class="ss-client-item">
+                <div class="ss-client-avatar" style="background:rgba(59,130,246,0.2);">💻</div>
+                <div style="flex:1;">
+                  <div class="ss-client-name">TechStart GmbH</div>
+                  <div class="ss-client-revenue">Total: €11,500</div>
+                </div>
+                <div class="ss-client-chip" style="background:rgba(34,197,94,0.12);color:#22c55e;">Active</div>
+              </div>
+              <div class="ss-client-item">
+                <div class="ss-client-avatar" style="background:rgba(244,63,94,0.2);">🎨</div>
+                <div style="flex:1;">
+                  <div class="ss-client-name">DesignHub Studio</div>
+                  <div class="ss-client-revenue">Total: €7,200</div>
+                </div>
+                <div class="ss-client-chip" style="background:rgba(251,191,36,0.12);color:#fbbf24;">Overdue</div>
+              </div>
+              <div class="ss-client-item">
+                <div class="ss-client-avatar" style="background:rgba(124,58,237,0.2);">🚀</div>
+                <div style="flex:1;">
+                  <div class="ss-client-name">Startup.io</div>
+                  <div class="ss-client-revenue">Total: €4,900</div>
+                </div>
+                <div class="ss-client-chip" style="background:rgba(34,197,94,0.12);color:#22c55e;">Active</div>
+              </div>
+              <div class="ss-client-item">
+                <div class="ss-client-avatar" style="background:rgba(6,182,212,0.2);">🏦</div>
+                <div style="flex:1;">
+                  <div class="ss-client-name">FinTech Solutions</div>
+                  <div class="ss-client-revenue">Total: €2,780</div>
+                </div>
+                <div class="ss-client-chip" style="background:rgba(148,163,184,0.12);color:#94a3b8;">Inactive</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="screenshot-label">Client List</div>
+      </div>
+
+      
+      <div class="screenshot-card">
+        <div class="screenshot-phone">
+          <div class="screenshot-screen">
+            <div class="ss-header">
+              <div class="ss-title">Time Tracker</div>
+              <div class="ss-subtitle">Today · Mar 9</div>
+            </div>
+            <div class="ss-time-tracker">
+              <div style="background:var(--bg-card);border:1px solid var(--border);border-radius:12px;padding:10px;margin-bottom:8px;text-align:center;">
+                <div style="font-size:7px;color:var(--text-muted);font-family:var(--font-body);margin-bottom:4px;">Current Project</div>
+                <div style="font-size:9px;font-weight:700;color:var(--indigo-light);font-family:var(--font-body);margin-bottom:6px;">Acme Corp — Website Redesign</div>
+                <div class="ss-timer-val">03:24:17</div>
+                <div class="ss-timer-label">Running · €50/h → €171.25 earned</div>
+                <button class="ss-timer-btn" style="background:linear-gradient(135deg,#f43f5e,#e11d48);">⏹ Stop Timer</button>
+              </div>
+              <div style="font-size:8px;font-weight:700;color:var(--text-muted);text-transform:uppercase;letter-spacing:0.06em;font-family:var(--font-body);margin-bottom:6px;">Today's Log</div>
+              <div class="ss-task-row">
+                <div>
+                  <div class="ss-task-name">TechStart — API Integration</div>
+                  <div style="font-size:6px;color:var(--text-muted);font-family:var(--font-body);">09:00 – 11:30</div>
+                </div>
+                <div style="text-align:right;">
+                  <div class="ss-task-time">2h 30m</div>
+                  <div style="font-size:6px;color:var(--text-muted);font-family:var(--font-body);">€125</div>
+                </div>
+              </div>
+              <div class="ss-task-row">
+                <div>
+                  <div class="ss-task-name">DesignHub — UI Review</div>
+                  <div style="font-size:6px;color:var(--text-muted);font-family:var(--font-body);">11:45 – 13:00</div>
+                </div>
+                <div style="text-align:right;">
+                  <div class="ss-task-time">1h 15m</div>
+                  <div style="font-size:6px;color:var(--text-muted);font-family:var(--font-body);">€62.50</div>
+                </div>
+              </div>
+              <div style="margin-top:8px;background:rgba(99,102,241,0.08);border:1px solid rgba(99,102,241,0.15);border-radius:8px;padding:6px 8px;display:flex;justify-content:space-between;align-items:center;">
+                <div style="font-size:7px;color:var(--text-muted);font-family:var(--font-body);">Total today</div>
+                <div style="font-family:var(--font-display);font-size:11px;font-weight:800;color:var(--indigo-light);">7h 9m · €358.75</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="screenshot-label">Time Tracker</div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<section id="tech">
+  <div class="container">
+    <div class="section-header animate-on-scroll">
+      <div class="badge"><span class="badge-dot"></span>Technology</div>
+      <h2>Built with <span class="gradient-text">modern technology</span></h2>
+      <p>Powered by the most reliable and scalable stack for mobile development — so the app is fast, secure and always available.</p>
+    </div>
+
+    <div class="tech-grid">
+      <div class="tech-card animate-on-scroll delay-1">
+        <div class="tech-icon">🐦</div>
+        <div>
+          <div class="tech-name">Flutter</div>
+          <div class="tech-desc">Cross-platform framework by Google. Beautiful native performance on Android with pixel-perfect Material 3 UI.</div>
+        </div>
+      </div>
+      <div class="tech-card animate-on-scroll delay-1">
+        <div class="tech-icon">🔥</div>
+        <div>
+          <div class="tech-name">Firebase Suite</div>
+          <div class="tech-desc">Auth, Firestore, Storage, Cloud Messaging & Functions — a complete backend with real-time sync and push notifications.</div>
+        </div>
+      </div>
+      <div class="tech-card animate-on-scroll delay-2">
+        <div class="tech-icon">⚡</div>
+        <div>
+          <div class="tech-name">Riverpod</div>
+          <div class="tech-desc">Reactive state management for Flutter. Predictable, testable, and efficient data flow throughout the app.</div>
+        </div>
+      </div>
+      <div class="tech-card animate-on-scroll delay-2">
+        <div class="tech-icon">🎨</div>
+        <div>
+          <div class="tech-name">Material 3</div>
+          <div class="tech-desc">Google's latest design system — expressive, adaptive UI with dynamic color theming and polished interactions.</div>
+        </div>
+      </div>
+      <div class="tech-card animate-on-scroll delay-3">
+        <div class="tech-icon">🌑</div>
+        <div>
+          <div class="tech-name">Full Dark Mode</div>
+          <div class="tech-desc">True OLED dark mode following Material 3 guidelines. Saves battery and easy on the eyes during late-night invoicing.</div>
+        </div>
+      </div>
+      <div class="tech-card animate-on-scroll delay-3">
+        <div class="tech-icon">🔒</div>
+        <div>
+          <div class="tech-name">Security</div>
+          <div class="tech-desc">Firebase Auth, Firestore security rules, local biometric lock. Your financial data stays private and protected.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<section id="roadmap">
+  <div class="container">
+    <div class="section-header animate-on-scroll">
+      <div class="badge"><span class="badge-dot"></span>Roadmap</div>
+      <h2>What's coming <span class="gradient-text">next</span></h2>
+      <p>Invoice Manager is actively developed. Here's what we're building for our growing freelancer community.</p>
+    </div>
+
+    <div class="roadmap-grid">
+      <div class="roadmap-card animate-on-scroll delay-1">
+        <div class="roadmap-icon">👑</div>
+        <div>
+          <h3>Pro Subscription Plans</h3>
+          <p>Unlock unlimited invoices, advanced analytics, priority support, and team features with Invoice Manager Pro.</p>
+        </div>
+      </div>
+      <div class="roadmap-card animate-on-scroll delay-1">
+        <div class="roadmap-icon">📧</div>
+        <div>
+          <h3>Email Invoice Sending</h3>
+          <p>Send PDF invoices directly from the app to your client's email. No more manual PDF export and attachment.</p>
+        </div>
+      </div>
+      <div class="roadmap-card animate-on-scroll delay-2">
+        <div class="roadmap-icon">📡</div>
+        <div>
+          <h3>Real Exchange Rates</h3>
+          <p>Live currency conversion powered by real-time exchange rate APIs. Invoice in EUR, get paid in USD — seamlessly.</p>
+        </div>
+      </div>
+      <div class="roadmap-card animate-on-scroll delay-2">
+        <div class="roadmap-icon">🖥️</div>
+        <div>
+          <h3>Web Version</h3>
+          <p>A full web dashboard to manage invoices and clients from your desktop browser. Perfect for when you're at your desk.</p>
+        </div>
+      </div>
+      <div class="roadmap-card animate-on-scroll delay-3">
+        <div class="roadmap-icon">🍎</div>
+        <div>
+          <h3>iOS App (iPhone & iPad)</h3>
+          <p>Invoice Manager is coming to the Apple App Store. Built with the same Flutter codebase for a native iOS experience.</p>
+        </div>
+      </div>
+      <div class="roadmap-card animate-on-scroll delay-3">
+        <div class="roadmap-icon">🤖</div>
+        <div>
+          <h3>AI Assistant</h3>
+          <p>Smart invoice suggestions, automatic categorization, and AI-powered spending insights to optimize your freelance income.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<section id="target-users">
+  <div class="container">
+    <div class="section-header animate-on-scroll">
+      <div class="badge"><span class="badge-dot"></span>Who It's For</div>
+      <h2>Built for every <span class="gradient-text">self-employed professional</span></h2>
+      <p>Whether you charge by the hour or by the project, Invoice Manager adapts to your workflow.</p>
+    </div>
+
+    <div class="users-grid">
+      <div class="user-card animate-on-scroll delay-1">
+        <span class="user-emoji">💻</span>
+        <h3>Developers</h3>
+        <p>Track dev hours, bill per sprint, manage multiple client projects simultaneously.</p>
+      </div>
+      <div class="user-card animate-on-scroll delay-1">
+        <span class="user-emoji">🎨</span>
+        <h3>Designers</h3>
+        <p>Create branded invoices that reflect your design quality. Include design files in deliverables.</p>
+      </div>
+      <div class="user-card animate-on-scroll delay-2">
+        <span class="user-emoji">📢</span>
+        <h3>Consultants</h3>
+        <p>Professional contracts, clear hourly tracking, and polished invoices for corporate clients.</p>
+      </div>
+      <div class="user-card animate-on-scroll delay-2">
+        <span class="user-emoji">✍️</span>
+        <h3>Freelancers</h3>
+        <p>Writers, translators, marketers — anyone billing for their expertise and time.</p>
+      </div>
+      <div class="user-card animate-on-scroll delay-3">
+        <span class="user-emoji">🏗️</span>
+        <h3>Self-Employed</h3>
+        <p>Photographers, coaches, builders, tutors — track income and stay professional.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<section id="faq">
+  <div class="container">
+    <div class="section-header animate-on-scroll">
+      <div class="badge"><span class="badge-dot"></span>FAQ</div>
+      <h2>Frequently asked <span class="gradient-text">questions</span></h2>
+      <p>Everything you need to know about Invoice Manager before you download.</p>
+    </div>
+
+    <div class="faq-list">
+      <div class="faq-item animate-on-scroll delay-1">
+        <div class="faq-question">
+          Is Invoice Manager free to download?
+          <span class="faq-chevron">▾</span>
+        </div>
+        <div class="faq-answer">
+          <div class="faq-answer-inner">Yes — Invoice Manager is completely free to download on Google Play. Core features including invoice creation, client management, and time tracking are available at no cost. A Pro subscription with advanced features is coming soon.</div>
+        </div>
+      </div>
+      <div class="faq-item animate-on-scroll delay-1">
+        <div class="faq-question">
+          Is my financial data secure?
+          <span class="faq-chevron">▾</span>
+        </div>
+        <div class="faq-answer">
+          <div class="faq-answer-inner">Absolutely. All data is stored in Firebase Firestore with strict security rules. Your account is protected by Firebase Authentication. We never share your data with third parties. You can also enable biometric lock within the app settings.</div>
+        </div>
+      </div>
+      <div class="faq-item animate-on-scroll delay-2">
+        <div class="faq-question">
+          Which currencies does the app support?
+          <span class="faq-chevron">▾</span>
+        </div>
+        <div class="faq-answer">
+          <div class="faq-answer-inner">Invoice Manager supports 10+ currencies including EUR, USD, GBP, RUB, KZT, UAH, CHF, PLN, SEK, and more. You can set a default currency per client, so invoicing international clients is seamless. Live exchange rate integration is coming in a future update.</div>
+        </div>
+      </div>
+      <div class="faq-item animate-on-scroll delay-2">
+        <div class="faq-question">
+          Can I customize the PDF invoices with my brand?
+          <span class="faq-chevron">▾</span>
+        </div>
+        <div class="faq-answer">
+          <div class="faq-answer-inner">Yes! You can upload your logo, choose brand colors, customize fonts, and add a personalized footer message to every PDF invoice. The result is a professional, branded document that represents your business perfectly.</div>
+        </div>
+      </div>
+      <div class="faq-item animate-on-scroll delay-3">
+        <div class="faq-question">
+          Is the app available in Russian?
+          <span class="faq-chevron">▾</span>
+        </div>
+        <div class="faq-answer">
+          <div class="faq-answer-inner">Yes — Invoice Manager is fully localized in both English and Russian. The app automatically detects your device language. Contract templates are also provided in both languages, specifically designed for Russian legal requirements and CIS freelancers.</div>
+        </div>
+      </div>
+      <div class="faq-item animate-on-scroll delay-3">
+        <div class="faq-question">
+          Does the time tracker integrate with invoices?
+          <span class="faq-chevron">▾</span>
+        </div>
+        <div class="faq-answer">
+          <div class="faq-answer-inner">Yes — this is one of our most loved features. When you create an invoice for a project, you can pull all tracked time sessions directly into invoice line items. The app automatically calculates the total based on your hourly rate. No manual entry needed.</div>
+        </div>
+      </div>
+      <div class="faq-item animate-on-scroll delay-4">
+        <div class="faq-question">
+          When is the iOS / web version coming?
+          <span class="faq-chevron">▾</span>
+        </div>
+        <div class="faq-answer">
+          <div class="faq-answer-inner">We're actively working on the iOS version and a web dashboard. Since the app is built with Flutter, the iOS port benefits from our shared codebase and is targeted for later in 2026. Sign up for notifications to be first to know when it launches.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<section id="cta">
+  <div class="container">
+    <div class="cta-card animate-on-scroll">
+      <h2>Start managing your<br/>freelance business today.</h2>
+      <p>Join thousands of freelancers across Europe and CIS who use Invoice Manager to look professional, get paid faster and grow their income.</p>
+      <div class="cta-buttons">
+        <a href="#" class="btn-white">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M3.18 23.76c.35.2.74.24 1.12.12l12.44-7.18-2.7-2.7-10.86 9.76zM20.84 10.4C20.32 9.96 14.28 6.38 13 5.64L3.3.24C2.9.04 2.44.08 2.1.32L14.84 13.06l6-2.66zM1.56 1.08C1.2 1.4 1 1.86 1 2.44v19.12c0 .58.2 1.04.56 1.36l.12.1L12.5 12.1v-.2L1.68.98l-.12.1zM21.28 13.26l-3.38 1.9-3-3 3-3 3.4 1.92c.96.54.96 1.64-.02 2.18z"/></svg>
+          Download on Google Play
+        </a>
+        <a href="#features" class="btn-outline-white">
+          View All Features
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <a href="#" class="logo">
+          <div class="logo-icon">📄</div>
+          <div>
+            <span class="logo-text">Invoice Manager</span>
+            <span class="logo-sub">Freelancer Finance</span>
+          </div>
+        </a>
+        <p class="footer-desc">The all-in-one Flutter app for freelancers to manage invoices, clients, time and expenses. Built for CIS and European self-employed professionals.</p>
+        <div class="footer-social">
+          <a href="#" class="social-btn" title="Telegram">✈️</a>
+          <a href="#" class="social-btn" title="GitHub">💻</a>
+          <a href="#" class="social-btn" title="Twitter/X">𝕏</a>
+          <a href="#" class="social-btn" title="LinkedIn">in</a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4>Product</h4>
+        <ul>
+          <li><a href="#features">Features</a></li>
+          <li><a href="#screenshots">Screenshots</a></li>
+          <li><a href="#how-it-works">How It Works</a></li>
+          <li><a href="#roadmap">Roadmap</a></li>
+          <li><a href="#tech">Technology</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Resources</h4>
+        <ul>
+          <li><a href="#">Help Center</a></li>
+          <li><a href="#">Release Notes</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="#">Status</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms of Service</a></li>
+          <li><a href="/cdn-cgi/l/email-protection#563e333a3a39163f3820393f35333b37383731332478372626"><span class="__cf_email__" data-cfemail="056d6069696a456c6b736a6c666068646b646260772b647575">[email&#160;protected]</span></a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="footer-copy">© 2026 Invoice Manager. All rights reserved. Built with ❤️ for freelancers.</div>
+      <div class="footer-legal">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
+        <a href="/cdn-cgi/l/email-protection#6a020f0606052a03041c0503090f070b040b0d0f18440b1a1a">Contact</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
